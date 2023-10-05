@@ -44,7 +44,7 @@ def hmac_gen(key_ran, data):
 def main():
     if len(sys.argv) < 4 or (len(sys.argv) - 1) % 2 == 0 or len(set(sys.argv[1:])) != len(sys.argv) - 1:
         print("Invalid input. Please provide an odd number (>=3) of unique choices.")
-        print("Example: python game.py Rock Paper Scissors")
+        print("Example: python game.py 1 2 3....")
         sys.exit(1)
     
     choice = sys.argv[1:]
